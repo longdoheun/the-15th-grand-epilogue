@@ -3,25 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-color: #f1f1f1;
+}
+
+.main-container {
+  width: calc(100% - 2rem);
+  margin: 0 1rem;
+  /* width: inherit; */
+  height: inherit;
+  /* max-width: 1200px; */
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    width: calc(100% - 8rem);
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-container {
+    width: calc(100% - 12rem);
+  }
+}
+
+.scene {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  /* background-color: #fff; */
+  z-index: 1;
+}
+
+.line {
+  font-family: "charter";
+  /* font-weight: bold; */
+  color: #945273;
+  /* width: inherit; */
+  border-bottom: solid 1px #945273;
 }

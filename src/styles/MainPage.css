@@ -1,0 +1,59 @@
+.section-left {
+}
+
+.section-right {
+  width: 100%;
+  display: flex;
+  /* align-items: end; */
+  justify-content: flex-end;
+}
+
+.main-page-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+  /* align-items: center; */
+}
+
+.main-page-info {
+  color: #945273;
+  text-align: right;
+  font-family: "Charter";
+  font-size: 16px;
+  font-style: normal;
+  /* font-weight: 700; */
+  line-height: normal;
+}
+
+@media (min-width: 390px) {
+  .main-page-info {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 512px) {
+  .main-page-info {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-page-info {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .main-page-info {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-page-info {
+    font-size: 28px;
+  }
+}

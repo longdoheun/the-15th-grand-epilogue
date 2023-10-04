@@ -1,0 +1,67 @@
+.main-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: min-content;
+  gap: 10px;
+}
+
+.main-text {
+  font-family: "charter";
+  font-weight: bold;
+  font-size: 56px;
+  display: inline-block;
+  line-height: normal;
+  background: linear-gradient(93deg, #a06f4f 0.33%, #945273 82.35%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-subtext {
+  font-family: source-han-serif-korean, serif;
+  font-style: normal;
+  font-weight: 900;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #945273;
+}
+
+@media (min-width: 390px) {
+  .main-text {
+    font-size: 64px;
+  }
+  .main-subtext {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 512px) {
+  .main-text {
+    font-size: 96px;
+  }
+  .main-subtext {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-text {
+    font-size: 96px;
+  }
+  .main-subtext {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-title-container {
+    gap: 15px;
+  }
+  .main-text {
+    font-size: 128px;
+  }
+  .main-subtext {
+    font-size: 28px;
+  }
+}
