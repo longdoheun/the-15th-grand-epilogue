@@ -38,6 +38,12 @@ body {
   }
 }
 
+@media (min-width: 1920px) {
+  .main-container {
+    width: 1800px;
+  }
+}
+
 .scene {
   position: absolute;
   width: 100%;
