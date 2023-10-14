@@ -7,7 +7,7 @@
 }
 
 .main-text {
-  font-family: "charter";
+  font-family: "charter-itc";
   font-weight: bold;
   font-size: 56px;
   display: inline-block;
@@ -32,7 +32,7 @@
     font-size: 64px;
   }
   .main-subtext {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -41,7 +41,7 @@
     font-size: 96px;
   }
   .main-subtext {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 

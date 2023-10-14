@@ -18,8 +18,14 @@ export default function Home() {
   return (
     <>
       {/* main layout of website container */}
+      <div className="line">The 15th Grand Epilogue</div>
       <Scene>
-        <div className="line">The 15th Grand Epilogue</div>
+        <MainPage />
+        <MainPage />
+        <MainPage />
+        <MainPage />
+        <MainPage />
+        <MainPage />
         <MainPage />
       </Scene>
       {/* background canvas rendering */}

@@ -1,4 +1,5 @@
 import { childrenProps } from "@/types/childrenProps";
+import "../../public/static/fonts/fonts.css";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Source_Serif_4 } from "next/font/google";
