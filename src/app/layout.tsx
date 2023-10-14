@@ -28,8 +28,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://the-15th-grand-epilogue.vercel.app/",
-    title: meta.title,
-    description: meta.title,
+    title: "The 15th Grand Epilogue",
+    description:
+      "글로벌경제학과 15주년 기념 게필로그 행사에 글로벌경제학과 가족분들을 모십니다.",
+    siteName: "Grand Epilogue",
+    images: [
+      {
+        url: "/static/image/title.png",
+      },
+    ],
   },
 };
 
