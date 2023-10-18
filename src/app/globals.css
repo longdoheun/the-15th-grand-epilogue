@@ -15,56 +15,70 @@ body {
   height: 100vh;
   background-color: black;
   background-color: #f1f1f1;
+  /* position: relative; */
+}
+.scene {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  height: -webkit-fill-available;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+  z-index: 1;
+  scroll-snap-type: y mandatory;
 }
 
-.main-container {
-  position: relative;
+.m-container::-webkit-scrollbar {
+  display: none;
+}
+
+.-main {
+  scroll-snap-align: start;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+}
+
+.layout-container {
+  /* position: relative; */
   width: calc(100% - 2rem);
-  margin: 0 1rem;
+  margin: auto;
+  /* margin: 0 1rem; */
   /* width: inherit; */
-  height: inherit;
   /* max-width: 1200px; */
 }
 
 @media (min-width: 768px) {
-  .main-container {
+  .layout-container {
     width: calc(100% - 8rem);
   }
 }
 
 @media (min-width: 1440px) {
-  .main-container {
+  .layout-container {
     width: calc(100% - 12rem);
   }
 }
 
 @media (min-width: 1920px) {
-  .main-container {
+  .layout-container {
     width: 1800px;
   }
 }
 
-.scene {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  -ms-overflow-style: none; /* 인터넷 익스플로러 */
-  scrollbar-width: none; /* 파이어폭스 */
-  z-index: 1;
-}
-
-.scene::-webkit-scrollbar {
-  display: none;
-}
-
 .line {
   width: 100%;
+  padding: 10px 0px;
   position: absolute;
   font-family: "charter-itc";
   /* font-weight: bold; */
   color: #945273;
   /* width: inherit; */
-  border-bottom: solid 1px #945273;
+  /* border-bottom: solid 1px #945273; */
+  border-bottom: solid 1px #eeeeee;
   z-index: 2;
+  background-color: #fff;
 }

@@ -1,0 +1,17 @@
+.footer {
+  /* background: #000; */
+  background: rgba(0, 0, 0, 0.9);
+  height: 160px;
+  border-top: #8b8b8b solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.copyright {
+  color: #8b8b8b;
+  font-family: Roboto, Arial;
+  font-size: 9pt;
+  font-weight: 400;
+  vertical-align: baseline;
+}

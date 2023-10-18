@@ -1,0 +1,12 @@
+.img-con {
+  width: 100%;
+  height: 100%;
+  background: var(
+    --linear-gradient,
+    linear-gradient(
+      180deg,
+      rgba(148, 82, 115, 0.7) 0%,
+      rgba(171, 126, 119, 0.7) 100%
+    )
+  );
+}

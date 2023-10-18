@@ -1,0 +1,86 @@
+.invitation-con {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.invitation-title {
+  color: #945273;
+  font-family: "charter-itc";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.invitation-left {
+  max-width: 800px;
+
+  /* line change */
+  white-space: pre-wrap;
+  /* line width */
+  line-height: 40px;
+  /* font */
+  font-family: source-han-serif-korean, serif;
+  font-style: normal;
+  font-weight: 900;
+  color: #945273;
+
+  font-size: 20px;
+}
+
+.invitation-right {
+  display: flex;
+  justify-content: flex-end;
+
+  /* font */
+  color: #945273;
+  font-family: "charter-itc";
+  font-size: 20px;
+}
+
+@media (min-width: 390px) {
+  .invitation-title {
+    font-size: 48px;
+  }
+  .invitation-left {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .invitation-right {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 512px) {
+  .invitation-title {
+    font-size: 48px;
+  }
+  .invitation-left {
+    font-size: 15px;
+  }
+  .invitation-right {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .invitation-title {
+    font-size: 64px;
+  }
+  .invitation-left {
+    font-size: 16px;
+  }
+  .invitation-right {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .invitation-title {
+    font-size: 64px;
+  }
+  .invitation-left {
+    font-size: 18px;
+  }
+}

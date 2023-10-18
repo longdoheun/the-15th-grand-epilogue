@@ -1,9 +1,10 @@
-import MainText from "../MainText/MainText";
-import "@/styles/MainPage.css";
+import AppLayout from "@/Layout/AppLayout";
+import MainText from "./MainText";
+import "@/styles/MainPage/MainPage.css";
 
 export default function MainPage() {
   return (
-    <div className="main-page-container">
+    <AppLayout.Main>
       <section className="section-left">
         <MainText />
       </section>
@@ -14,6 +15,6 @@ export default function MainPage() {
           <div>Dress Code : Black & White</div>
         </div>
       </section>
-    </div>
+    </AppLayout.Main>
   );
 }
