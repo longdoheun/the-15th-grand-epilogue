@@ -27,8 +27,6 @@ export default function Home() {
   const onClickEvent = () => {
     // setColor("#000000");
   };
-  const longitude = 128.8784972;
-  const latitude = 37.74913611;
 
   return (
     <>

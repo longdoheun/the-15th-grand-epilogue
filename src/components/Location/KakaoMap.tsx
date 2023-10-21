@@ -3,7 +3,7 @@ import React from "react";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
 export default function KakaoMap() {
-  const key = "0e53b1ea7185fbccda8f77a5510e2c44";
+  const KAKAO_API_KEY = process.env.KAKAO_API_APP_KEY;
 
   // 성균관대학교 조병두홀 위치
   const position = {
@@ -14,7 +14,7 @@ export default function KakaoMap() {
   return (
     <>
       <Script
-        src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${key}&autoload=false`}
+        src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${KAKAO_API_KEY}&autoload=false`}
         strategy="beforeInteractive"
       />
       <Map
