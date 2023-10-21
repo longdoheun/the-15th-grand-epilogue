@@ -55,8 +55,10 @@
 
 .invitation-right {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
-
+  align-items: end;
+  gap: 10px;
   /* 가운데 정렬하기 */
   /* justify-content: center; */
 

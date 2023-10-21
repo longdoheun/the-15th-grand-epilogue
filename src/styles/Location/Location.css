@@ -1,3 +1,9 @@
+.location-con {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+}
+
 .location-title {
   color: #945273;
   font-family: "charter-itc";
@@ -7,15 +13,20 @@
   line-height: normal;
 }
 
-.location-left {
+.location-map {
   /* opacity: 0.5; */
   /* width: 100%;
   height: 100%; */
-  max-width: 500px;
+  max-width: 800px;
+  width: 100%;
   aspect-ratio: 1.6;
 }
 
 .location-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: source-han-serif-korean, serif;
   font-style: normal;
   font-weight: 900;
@@ -27,4 +38,9 @@
 }
 .locattion-name-sub {
   font-size: 15px;
+}
+.map-cover {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

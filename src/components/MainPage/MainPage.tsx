@@ -4,7 +4,7 @@ import "@/styles/MainPage/MainPage.css";
 
 export default function MainPage() {
   return (
-    <AppLayout.Main>
+    <AppLayout.Theme>
       <section className="section-left">
         <MainText />
       </section>
@@ -15,6 +15,6 @@ export default function MainPage() {
           <div>Dress Code : Black & White</div>
         </div>
       </section>
-    </AppLayout.Main>
+    </AppLayout.Theme>
   );
 }

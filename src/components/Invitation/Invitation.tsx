@@ -1,6 +1,7 @@
 import "@/styles/Invitation/Invitation.css";
 import AppLayout from "@/Layout/AppLayout";
 import { UNDERGRADUATE } from "@/assets/lib/InvitationText";
+import Logo from "@/assets/svg/logo.svg";
 
 export default function Invitation() {
   return (
@@ -11,7 +12,10 @@ export default function Invitation() {
 
         <section className="invitation-left">{UNDERGRADUATE}</section>
         <section className="invitation-right">
-          The 15th Global Economics Student Council GE:nie
+          <div className="inv-info">
+            The 15th Global Economics Student Council
+          </div>
+          <Logo />
         </section>
         {/* </div> */}
       </AppLayout.Main>

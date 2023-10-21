@@ -1,29 +1,29 @@
+import { useRouter } from "next/navigation";
 import Script from "next/script";
-import React from "react";
+import React, { useState } from "react";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
-export default function KakaoMap() {
-  const KAKAO_API_KEY = process.env.KAKAO_API_APP_KEY;
+export type PositionProps = {
+  latitude: number;
+  longitude: number;
+};
 
-  // 성균관대학교 조병두홀 위치
-  const position = {
-    latittude: 37.58749256737859,
-    longitutde: 126.99461913113926,
-  };
+export default function KakaoMap({ latitude, longitude }: PositionProps) {
+  // get api key from .env
+  // const KAKAO_API_KEY = process.env.KAKAO_API_APP_KEY;
 
+  const router = useRouter();
   return (
     <>
-      <Script
-        src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${KAKAO_API_KEY}&autoload=false`}
-        strategy="beforeInteractive"
-      />
       <Map
-        center={{ lat: position.latittude, lng: position.longitutde }}
+        center={{ lat: latitude, lng: longitude }}
         style={{ width: "100%", height: "100%" }}
+        isPanto={false}
         level={3}
       >
         <MapMarker
-          position={{ lat: position.latittude, lng: position.longitutde }}
+          onClick={() => router.push("https://naver.me/5vIlgA1V")}
+          position={{ lat: latitude, lng: longitude }}
         />
       </Map>
     </>

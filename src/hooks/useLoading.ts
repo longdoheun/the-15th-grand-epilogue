@@ -7,7 +7,7 @@ export const useLoading = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // 예: 3초 후에 오프닝 애니메이션을 숨김
+    }, 1000); // 예: 3초 후에 오프닝 애니메이션을 숨김
   }, []);
 
   return isLoading;

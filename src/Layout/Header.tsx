@@ -5,7 +5,7 @@ import "@/styles/Layout/Header.css";
 export default function Header() {
   return (
     <div className="header">
-      <AppLayout>
+      <AppLayout.Theme>
         <div className="line">
           <span className="header-logo">The 15th Grand Epilogue</span>
           <section className="nav">
@@ -14,7 +14,7 @@ export default function Header() {
             <span>Sign up</span>
           </section>
         </div>
-      </AppLayout>
+      </AppLayout.Theme>
     </div>
   );
 }

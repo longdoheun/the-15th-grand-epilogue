@@ -14,6 +14,10 @@ function main({ children }: AppLayoutProps) {
   return <div className="layout-container -main">{children}</div>;
 }
 
+function theme({ children }: AppLayoutProps) {
+  return <div className="theme-container -main">{children}</div>;
+}
+
 function invitation({ children }: AppLayoutProps) {
   return <div className="layout-container -invitation">{children}</div>;
 }
@@ -21,3 +25,4 @@ function invitation({ children }: AppLayoutProps) {
 AppLayout.Main = main;
 AppLayout.Invitation = invitation;
 AppLayout.Scene = scene;
+AppLayout.Theme = theme;

@@ -13,6 +13,7 @@ import { useLoading } from "@/hooks/useLoading";
 import Loading from "./loading";
 import ImgPage from "@/components/ImgPage/ImgPage";
 import Location from "@/components/Location/Location";
+import GuestBook from "@/components/GuestBook/GuestBook";
 
 export default function Home() {
   const [color, setColor] = useState("#f1f1f1");
@@ -38,7 +39,7 @@ export default function Home() {
         <Invitation />
         <ImgPage />
         <Location />
-        <MainPage />
+        <GuestBook />
         <Footer />
       </AppLayout.Scene>
       {/* background canvas rendering */}

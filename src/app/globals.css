@@ -77,3 +77,26 @@ body {
     width: 1440px;
   }
 }
+
+.theme-container {
+  width: calc(100% - 2rem);
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .theme-container {
+    width: calc(100% - 8rem);
+  }
+}
+
+@media (min-width: 1440px) {
+  .theme-container {
+    width: calc(100% - 12rem);
+  }
+}
+
+@media (min-width: 1920px) {
+  .theme-container {
+    width: 1440px;
+  }
+}
