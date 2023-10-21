@@ -14,5 +14,10 @@ function main({ children }: AppLayoutProps) {
   return <div className="layout-container -main">{children}</div>;
 }
 
+function invitation({ children }: AppLayoutProps) {
+  return <div className="layout-container -invitation">{children}</div>;
+}
+
 AppLayout.Main = main;
+AppLayout.Invitation = invitation;
 AppLayout.Scene = scene;

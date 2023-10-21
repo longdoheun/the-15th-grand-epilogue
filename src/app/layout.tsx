@@ -1,6 +1,7 @@
 import { childrenProps } from "@/types/childrenProps";
 import type { Metadata } from "next";
 import { Source_Serif_4 } from "next/font/google";
+import Script from "next/script";
 import "../../public/static/fonts/fonts.css";
 import "./globals.css";
 

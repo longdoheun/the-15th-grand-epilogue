@@ -5,13 +5,14 @@ import { Canvas } from "@react-three/fiber";
 import { Vector3 } from "three";
 import MainPage from "@/components/MainPage/MainPage";
 import Invitation from "@/components/Invitation/Invitation";
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import Header from "@/Layout/Header";
 import AppLayout from "@/Layout/AppLayout";
 import Footer from "@/Layout/Footer";
 import { useLoading } from "@/hooks/useLoading";
 import Loading from "./loading";
 import ImgPage from "@/components/ImgPage/ImgPage";
+import Location from "@/components/Location/Location";
 
 export default function Home() {
   const [color, setColor] = useState("#f1f1f1");
@@ -26,6 +27,8 @@ export default function Home() {
   const onClickEvent = () => {
     // setColor("#000000");
   };
+  const longitude = 128.8784972;
+  const latitude = 37.74913611;
 
   return (
     <>
@@ -36,10 +39,10 @@ export default function Home() {
         <MainPage />
         <Invitation />
         <ImgPage />
+        <Location />
         <MainPage />
         <Footer />
       </AppLayout.Scene>
-
       {/* background canvas rendering */}
       <Canvas>
         <directionalLight position={[1, 1, 1]} />

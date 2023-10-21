@@ -10,3 +10,35 @@
     )
   );
 }
+
+.img-inner-con {
+  margin-bottom: 100px;
+  display: grid;
+  gap: 24px 24px;
+  grid-template-columns: repeat(6, 1fr);
+
+  @media (max-width: 1200px) {
+    gap: 14px 14px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 1024px) {
+    gap: 14px 14px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    gap: 14px 14px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 600px) {
+    gap: 14px 14px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.photo {
+  background: #000;
+  width: auto;
+  aspect-ratio: 1;
+}

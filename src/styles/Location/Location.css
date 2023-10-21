@@ -1,0 +1,30 @@
+.location-title {
+  color: #945273;
+  font-family: "charter-itc";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.location-left {
+  /* opacity: 0.5; */
+  /* width: 100%;
+  height: 100%; */
+  max-width: 500px;
+  aspect-ratio: 1.6;
+}
+
+.location-name {
+  font-family: source-han-serif-korean, serif;
+  font-style: normal;
+  font-weight: 900;
+  color: #945273;
+}
+
+.locattion-name-main {
+  font-size: 23px;
+}
+.locattion-name-sub {
+  font-size: 15px;
+}

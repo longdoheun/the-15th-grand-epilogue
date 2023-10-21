@@ -5,7 +5,28 @@ import React from "react";
 export default function ImgPage() {
   return (
     <div className="img-con">
-      <AppLayout.Main>길도흔 바보</AppLayout.Main>
+      <AppLayout.Main>
+        <section className="img-inner-con">
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+          <div className="photo"></div>
+        </section>
+      </AppLayout.Main>
     </div>
   );
 }

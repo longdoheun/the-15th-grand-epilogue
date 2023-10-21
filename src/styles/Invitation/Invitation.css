@@ -1,7 +1,30 @@
 .invitation-con {
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.invitation-wrapper {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 120px;
+}
+
+.invitation-nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  /* border-bottom: 1px solid #945273; */
+}
+
+.nav-selection {
+  font-family: source-han-serif-korean, serif;
+  font-style: normal;
+  font-weight: 900;
+  color: #945273;
+  font-size: 20px;
 }
 
 .invitation-title {
@@ -15,7 +38,8 @@
 
 .invitation-left {
   max-width: 800px;
-
+  display: flex;
+  justify-content: center;
   /* line change */
   white-space: pre-wrap;
   /* line width */
@@ -32,6 +56,9 @@
 .invitation-right {
   display: flex;
   justify-content: flex-end;
+
+  /* 가운데 정렬하기 */
+  /* justify-content: center; */
 
   /* font */
   color: #945273;
@@ -58,6 +85,7 @@
   }
   .invitation-left {
     font-size: 15px;
+    line-height: 35px;
   }
   .invitation-right {
     font-size: 15px;

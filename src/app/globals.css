@@ -26,10 +26,11 @@ body {
   -ms-overflow-style: none; /* 인터넷 익스플로러 */
   scrollbar-width: none; /* 파이어폭스 */
   z-index: 1;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
+  /* scroll-behavior: smooth; */
 }
 
-.m-container::-webkit-scrollbar {
+.scene::-webkit-scrollbar {
   display: none;
 }
 
@@ -40,6 +41,14 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 80px;
+}
+
+.-invitation {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .layout-container {
@@ -65,20 +74,6 @@ body {
 
 @media (min-width: 1920px) {
   .layout-container {
-    width: 1800px;
+    width: 1440px;
   }
-}
-
-.line {
-  width: 100%;
-  padding: 10px 0px;
-  position: absolute;
-  font-family: "charter-itc";
-  /* font-weight: bold; */
-  color: #945273;
-  /* width: inherit; */
-  /* border-bottom: solid 1px #945273; */
-  border-bottom: solid 1px #eeeeee;
-  z-index: 2;
-  background-color: #fff;
 }
