@@ -1,4 +1,5 @@
 import { DATABASE_GB_ID, TOKEN } from "@/assets/lib/Config";
+import { NextResponse } from "next/server";
 
 export async function POST() {
   const options = {
@@ -24,5 +25,5 @@ export async function POST() {
 
   const results = rawdata.results;
 
-  return Response.json({ results });
+  return NextResponse.json({ results });
 }

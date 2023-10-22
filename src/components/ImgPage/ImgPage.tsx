@@ -1,32 +1,44 @@
 import AppLayout from "@/Layout/AppLayout";
 import "@/styles/ImgPage/ImgPage.css";
-import React from "react";
-import { DATABASE_PH_ID, TOKEN } from "@/assets/lib/Config";
-import { GetServerSideProps } from "next";
-import { NotionDataType } from "@/types/NotionDataType";
+import React, { use, useEffect, useState } from "react";
 import Image from "next/image";
+import { SERVER } from "@/assets/lib/Config";
 
-export default async function ImgPage() {
-  const res = await fetch("https://the-15th-grand-epilogue.vercel.app/photos", {
+export async function getPhotos() {
+  const res = await fetch(`${SERVER}/photos`, {
     method: "POST",
   });
   const data = await res.json();
-  const photoList = await data.results;
+  return data;
+}
+
+export default function ImgPage() {
+  const data = use(getPhotos());
+  const [photoList, setPhotoList] = useState([]);
+
+  useEffect(() => {
+    setPhotoList(data.results);
+  }, []);
+
   console.log(photoList);
 
   return (
     <div className="img-con">
       <AppLayout.Main>
-        <div className="img-title">2009-2023 Global Economics Gallery</div>
+        <div className="img-title">Global Economics Gallery</div>
         <section className="img-inner-con">
           {photoList.map((photo: any) => (
-            <Image
+            <img
               key={photo.id}
-              width={200}
-              height={200}
               src={photo.properties.image.files[0].file.url}
               alt="Picture of the author"
             />
+            // <Image
+
+            //   width={200}
+            //   height={200}
+
+            // />
           ))}
           <div className="photo"></div>
           <div className="photo"></div>
