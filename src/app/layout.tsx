@@ -2,9 +2,9 @@ import { childrenProps } from "@/types/childrenProps";
 import type { Metadata } from "next";
 import { Source_Serif_4 } from "next/font/google";
 import Script from "next/script";
+import { KAKAO_API_KEY } from "@/assets/lib/Config";
 import "../../public/static/fonts/fonts.css";
 import "./globals.css";
-import Head from "next/head";
 
 const SourceSerif = Source_Serif_4({ subsets: ["cyrillic"] });
 
@@ -29,8 +29,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: childrenProps) {
-  const KAKAO_API_KEY = process.env.KAKAO_API_APP_KEY;
-
   return (
     <html lang="en">
       <body className={SourceSerif.className}>{children}</body>

@@ -13,6 +13,7 @@
     "@react-three/fiber": "^8.14.4",
     "@svgr/webpack": "^8.1.0",
     "@types/three": "^0.156.0",
+    "axios": "^1.5.1",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",

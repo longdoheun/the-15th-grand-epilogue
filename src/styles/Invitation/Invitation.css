@@ -37,6 +37,7 @@
 }
 
 .invitation-left {
+  margin-top: 80px;
   max-width: 800px;
   display: flex;
   justify-content: center;
@@ -54,6 +55,7 @@
 }
 
 .invitation-right {
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;

@@ -15,7 +15,7 @@ function main({ children }: AppLayoutProps) {
 }
 
 function theme({ children }: AppLayoutProps) {
-  return <div className="theme-container -main">{children}</div>;
+  return <div className="layout-container -theme">{children}</div>;
 }
 
 function invitation({ children }: AppLayoutProps) {

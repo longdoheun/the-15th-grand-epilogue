@@ -41,7 +41,7 @@ export default function Location() {
           </section>
         </div>
 
-        <section className="invitation-right">다른 사람들에게 공유하기</section>
+        <section className="location-right">다른 사람들에게 공유하기</section>
       </AppLayout.Main>
       {/* <div className="invitation-container"></div> */}
     </div>

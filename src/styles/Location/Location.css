@@ -1,6 +1,6 @@
 .location-con {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   background: rgba(255, 255, 255, 0.9);
 }
 
@@ -23,6 +23,7 @@
 }
 
 .location-name {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +41,17 @@
   font-size: 15px;
 }
 .map-cover {
+  margin-top: 80px;
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.location-right {
+  margin: 40px 0;
+  display: flex;
+  justify-content: flex-end;
+  /* font */
+  color: #945273;
+  font-family: "charter-itc";
 }

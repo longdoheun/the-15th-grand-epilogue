@@ -35,11 +35,12 @@ export default function Home() {
       {isLoading && <Loading />}
       <Header />
       <AppLayout.Scene>
-        <MainPage />
+        <MainPage isMain={true} />
         <Invitation />
         <ImgPage />
         <Location />
         <GuestBook />
+        <MainPage isMain={false} />
         <Footer />
       </AppLayout.Scene>
       {/* background canvas rendering */}

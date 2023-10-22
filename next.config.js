@@ -9,6 +9,17 @@ const nextConfig = {
 
     return config;
   },
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "prod-files-secure.s3.us-west-2.amazonaws.com",
+        port: "",
+        // pathname: "/account123/**",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

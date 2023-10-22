@@ -6,7 +6,7 @@ import Logo from "@/assets/svg/logo.svg";
 export default function Invitation() {
   return (
     <div className="invitation-con">
-      <AppLayout.Main>
+      <AppLayout.Theme>
         {/* <div className="invitation-wrapper"> */}
         <div className="invitation-title">Invitation</div>
 
@@ -18,7 +18,7 @@ export default function Invitation() {
           <Logo />
         </section>
         {/* </div> */}
-      </AppLayout.Main>
+      </AppLayout.Theme>
       {/* <div className="invitation-container"></div> */}
     </div>
   );

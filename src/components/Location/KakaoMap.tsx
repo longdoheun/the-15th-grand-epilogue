@@ -9,9 +9,6 @@ export type PositionProps = {
 };
 
 export default function KakaoMap({ latitude, longitude }: PositionProps) {
-  // get api key from .env
-  // const KAKAO_API_KEY = process.env.KAKAO_API_APP_KEY;
-
   const router = useRouter();
   return (
     <>
