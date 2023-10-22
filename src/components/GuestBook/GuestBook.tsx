@@ -10,7 +10,10 @@ export type ItemListProps = {
 };
 
 export default async function GuestBook() {
-  const res = await fetch("/comments", { method: "POST" });
+  const res = await fetch(
+    "https://the-15th-grand-epilogue.vercel.app/comments",
+    { method: "POST" }
+  );
   const data = await res.json();
   const CardList = await data.results;
   console.log(CardList);

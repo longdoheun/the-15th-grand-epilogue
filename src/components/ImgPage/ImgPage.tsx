@@ -7,7 +7,9 @@ import { NotionDataType } from "@/types/NotionDataType";
 import Image from "next/image";
 
 export default async function ImgPage() {
-  const res = await fetch("/photos", { method: "POST" });
+  const res = await fetch("https://the-15th-grand-epilogue.vercel.app/photos", {
+    method: "POST",
+  });
   const data = await res.json();
   const photoList = await data.results;
   console.log(photoList);
