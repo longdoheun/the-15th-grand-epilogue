@@ -11,11 +11,17 @@ export type ItemListProps = {
 };
 
 export async function getCardList() {
-  const res = await fetch(`${SERVER}/comments`, {
-    method: "POST",
-  });
-  const data = await res.json();
-  return data;
+  try {
+    const res = await fetch(`${SERVER}/comments`, {
+      method: "POST",
+    });
+    const data = await res.json();
+    console.log(data);
+
+    return data;
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 export default function GuestBook() {

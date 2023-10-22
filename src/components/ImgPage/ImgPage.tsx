@@ -5,11 +5,15 @@ import Image from "next/image";
 import { SERVER } from "@/assets/lib/Config";
 
 export async function getPhotos() {
-  const res = await fetch(`${SERVER}/photos`, {
-    method: "POST",
-  });
-  const data = await res.json();
-  return data;
+  try {
+    const res = await fetch(`${SERVER}/photos`, {
+      method: "POST",
+    });
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 export default function ImgPage() {
