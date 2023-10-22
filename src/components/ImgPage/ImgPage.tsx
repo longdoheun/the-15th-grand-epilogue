@@ -10,7 +10,6 @@ export async function getPhotos() {
       method: "POST",
     });
     const data = await res.json();
-    console.log("fetched data");
     return data;
   } catch (err) {
     console.log(err);
