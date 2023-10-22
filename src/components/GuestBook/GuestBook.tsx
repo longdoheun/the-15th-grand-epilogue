@@ -16,7 +16,6 @@ export async function getCardList() {
       method: "POST",
     });
     const data = await res.json();
-    console.log(data);
 
     return data;
   } catch (err) {

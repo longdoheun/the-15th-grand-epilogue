@@ -10,6 +10,7 @@ export async function getPhotos() {
       method: "POST",
     });
     const data = await res.json();
+    console.log("fetched data");
     return data;
   } catch (err) {
     console.log(err);
@@ -21,10 +22,11 @@ export default function ImgPage() {
   const [photoList, setPhotoList] = useState([]);
 
   useEffect(() => {
+    console.log("rendering start - useEffect");
     setPhotoList(data.results);
   }, []);
 
-  console.log(photoList);
+  console.log(photoList, "fetching in components");
 
   return (
     <div className="img-con">
