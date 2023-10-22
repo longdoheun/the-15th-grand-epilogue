@@ -32,17 +32,13 @@ export default function ImgPage() {
         <div className="img-title">Global Economics Gallery</div>
         <section className="img-inner-con">
           {photoList.map((photo: any) => (
-            <img
+            <Image
               key={photo.id}
               src={photo.properties.image.files[0].file.url}
               alt="Picture of the author"
+              width={200}
+              height={200}
             />
-            // <Image
-
-            //   width={200}
-            //   height={200}
-
-            // />
           ))}
           <div className="photo"></div>
           <div className="photo"></div>
