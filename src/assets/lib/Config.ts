@@ -7,4 +7,4 @@ const dev = process.env.NODE_ENV !== "production";
 
 export const SERVER = dev
   ? "http://localhost:3000"
-  : "the-15th-grand-epilogue.vercel.app";
+  : "https://the-15th-grand-epilogue.vercel.app";
