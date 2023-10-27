@@ -31,6 +31,20 @@ export default function Home() {
 
   return (
     <>
+      {/* background canvas rendering */}
+      <AppLayout.Scene>
+        <Canvas>
+          <directionalLight position={[1, 1, 1]} />
+          {/* <axesHelper scale={10} /> */}
+          <OrbitControls />
+          <WavyLine
+            points={points1}
+            color="#945273"
+            position={new Vector3(0, 0, 0)}
+          />
+          <color attach={"background"} args={[color]} />
+        </Canvas>
+      </AppLayout.Scene>
       {/* main layout of website container */}
       {isLoading && <Loading />}
       <AppLayout.Scene>
@@ -42,18 +56,6 @@ export default function Home() {
         <MainPage isMain={false} />
         <Footer />
       </AppLayout.Scene>
-      {/* background canvas rendering */}
-      <Canvas>
-        <directionalLight position={[1, 1, 1]} />
-        {/* <axesHelper scale={10} /> */}
-        <OrbitControls />
-        <WavyLine
-          points={points1}
-          color="#945273"
-          position={new Vector3(0, 0, 0)}
-        />
-        <color attach={"background"} args={[color]} />
-      </Canvas>
     </>
   );
 }
