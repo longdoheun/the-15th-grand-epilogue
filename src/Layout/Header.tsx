@@ -7,7 +7,7 @@ export default function Header() {
     <div className="header">
       <AppLayout.Theme>
         <div className="line">
-          <span className="header-logo">The 15th Grand Epilogue</span>
+          <span className="header-logo">GE:pilogue</span>
           <section className="nav">
             <span>About</span>
             <span>Dress code</span>

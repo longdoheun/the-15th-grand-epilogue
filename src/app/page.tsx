@@ -33,7 +33,6 @@ export default function Home() {
     <>
       {/* main layout of website container */}
       {isLoading && <Loading />}
-      <Header />
       <AppLayout.Scene>
         <MainPage isMain={true} />
         <Invitation />
@@ -46,7 +45,7 @@ export default function Home() {
       {/* background canvas rendering */}
       <Canvas>
         <directionalLight position={[1, 1, 1]} />
-        <axesHelper scale={10} />
+        {/* <axesHelper scale={10} /> */}
         <OrbitControls />
         <WavyLine
           points={points1}

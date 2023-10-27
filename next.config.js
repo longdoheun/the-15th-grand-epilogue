@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -14,8 +15,8 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "prod-files-secure.s3.us-west-2.amazonaws.com",
-        port: "",
+        hostname: "prod-files-secure.s3.us-west-2.amazonaws.com/**",
+        // port: "",
         // pathname: "/account123/**",
       },
     ],

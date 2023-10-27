@@ -49,6 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-attachment: fixed;
   /* gap: 80px; */
 }
 

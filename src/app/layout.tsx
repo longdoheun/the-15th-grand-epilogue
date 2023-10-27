@@ -31,11 +31,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: childrenProps) {
   return (
     <html lang="en">
-      <body className={SourceSerif.className}>{children}</body>
       <Script
         src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${KAKAO_API_KEY}&autoload=false`}
         // strategy="beforeInteractive"
       />
+      <body className={SourceSerif.className}>{children}</body>
     </html>
   );
 }

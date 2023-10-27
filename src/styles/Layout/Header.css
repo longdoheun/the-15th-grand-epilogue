@@ -7,6 +7,9 @@
   /* border-bottom: solid 1px #eeeeee; */
   z-index: 2;
   /* background-color: #fff; */
+  top: 0;
+  position: sticky;
+  background-color: #fff;
 }
 
 .line {

@@ -13,26 +13,27 @@ export async function getPhotos() {
     return data;
   } catch (err) {
     console.log(err);
+    return null;
   }
 }
 
 export default function ImgPage() {
-  const data = use(getPhotos());
-  const [photoList, setPhotoList] = useState([]);
+  // const data = use(getPhotos());
+  // const [photoList, setPhotoList] = useState([]);
 
-  useEffect(() => {
-    console.log("rendering start - useEffect");
-    setPhotoList(data.results);
-  }, []);
+  // useEffect(() => {
+  //   console.log("rendering start - useEffect");
+  //   setPhotoList(data.results);
+  // }, []);
 
-  console.log(photoList, "fetching in components");
+  // console.log(photoList, "fetching in components");
 
   return (
     <div className="img-con">
       <AppLayout.Main>
         <div className="img-title">Global Economics Gallery</div>
         <section className="img-inner-con">
-          {photoList.map((photo: any) => (
+          {/* {data.results.map((photo: any) => (
             <Image
               key={photo.id}
               src={photo.properties.image.files[0].file.url}
@@ -40,7 +41,7 @@ export default function ImgPage() {
               width={200}
               height={200}
             />
-          ))}
+          ))} */}
           <div className="photo"></div>
           <div className="photo"></div>
           <div className="photo"></div>
