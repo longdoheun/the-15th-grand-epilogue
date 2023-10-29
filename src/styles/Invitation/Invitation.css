@@ -22,7 +22,7 @@
 .nav-selection {
   font-family: source-han-serif-korean, serif;
   font-style: normal;
-  font-weight: 900;
+  /* font-weight: 900; */
   color: #945273;
   font-size: 20px;
 }
@@ -32,7 +32,7 @@
   font-family: "charter-itc";
   font-size: 64px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -48,7 +48,7 @@
   /* font */
   font-family: source-han-serif-korean, serif;
   font-style: normal;
-  font-weight: 900;
+  /* font-weight: 900; */
   color: #945273;
 
   font-size: 20px;

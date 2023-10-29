@@ -5,7 +5,6 @@ import { Canvas } from "@react-three/fiber";
 import { Vector3 } from "three";
 import MainPage from "@/components/MainPage/MainPage";
 import Invitation from "@/components/Invitation/Invitation";
-import React, { Suspense, useEffect, useState } from "react";
 import Header from "@/Layout/Header";
 import AppLayout from "@/Layout/AppLayout";
 import Footer from "@/Layout/Footer";
@@ -16,7 +15,6 @@ import Location from "@/components/Location/Location";
 import GuestBook from "@/components/GuestBook/GuestBook";
 
 export default function Home() {
-  const [color, setColor] = useState("#f1f1f1");
   const isLoading = useLoading();
   const points1 = [
     new Vector3(0, 12, 0),
@@ -25,13 +23,9 @@ export default function Home() {
     new Vector3(0, -12, 0),
   ];
 
-  const onClickEvent = () => {
-    // setColor("#000000");
-  };
-
   return (
     <>
-      {/* background canvas rendering */}
+      {isLoading && <Loading />}
       <AppLayout.Scene>
         <Canvas>
           <directionalLight position={[1, 1, 1]} />
@@ -42,13 +36,12 @@ export default function Home() {
             color="#945273"
             position={new Vector3(0, 0, 0)}
           />
-          <color attach={"background"} args={[color]} />
+          <color attach={"background"} args={["#f1f1f1"]} />
         </Canvas>
       </AppLayout.Scene>
-      {/* main layout of website container */}
-      {isLoading && <Loading />}
       <AppLayout.Scene>
         <MainPage isMain={true} />
+        <Header />
         <Invitation />
         <ImgPage />
         <Location />

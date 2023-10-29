@@ -21,7 +21,7 @@
 .main-subtext {
   font-family: source-han-serif-korean, serif;
   font-style: normal;
-  font-weight: 900;
+  /* font-weight: 900; */
   margin-left: 10px;
   font-size: 16px;
   color: #945273;

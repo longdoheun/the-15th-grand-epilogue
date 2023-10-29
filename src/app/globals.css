@@ -63,12 +63,8 @@ body {
 }
 
 .layout-container {
-  /* position: relative; */
   width: calc(100% - 2rem);
   margin: auto;
-  /* margin: 0 1rem; */
-  /* width: inherit; */
-  /* max-width: 1200px; */
 }
 
 @media (min-width: 768px) {

@@ -3,36 +3,24 @@ import "@/styles/GuestBook/GuestBook.css";
 import React, { use, useEffect, useState } from "react";
 import BookCard from "./BookCard";
 import { NotionDataType } from "@/types/NotionDataType";
-import { GetServerSideProps } from "next";
-import { DATABASE_GB_ID, SERVER, TOKEN } from "@/assets/lib/Config";
+import { getCardList } from "@/assets/lib/comment";
 
 export type ItemListProps = {
   CardList: NotionDataType[];
 };
 
-export async function getCardList() {
-  try {
-    const res = await fetch(`${SERVER}/comments`, {
-      method: "POST",
-    });
-    const data = await res.json();
-
-    return data;
-  } catch (err) {
-    console.log(err);
-  }
-}
-
 export default function GuestBook() {
-  const data = use(getCardList());
-  const CardList = data.results;
+  const [CardList, setCardList] = useState([]);
 
-  // const [CardList, setCardList] = useState([]);
+  useEffect(() => {
+    async function fetchData() {
+      const data = await getCardList();
+      console.log(data, "client");
+      setCardList(data.results);
+    }
 
-  // useEffect(() => {
-  //   setCardList(data.results);
-  //   console.log(CardList);
-  // }, []);
+    fetchData();
+  }, []);
 
   return (
     <div className="gb-con">
@@ -45,7 +33,7 @@ export default function GuestBook() {
       <section className="gb-inner-con">
         <AppLayout.Main>
           <div className="gb-card-renderer">
-            {CardList.map((item: any) => (
+            {CardList.slice(0, 6).map((item: any) => (
               <BookCard
                 key={item.id}
                 id={item.id}
@@ -53,9 +41,8 @@ export default function GuestBook() {
                 name={item.properties.name.title[0].plain_text}
                 date={new Date(item.properties.time.created_time)
                   .toLocaleString()
-                  .slice(0, -3)}
+                  .slice(0, -10)}
                 comment={item.properties.comment.rich_text[0].plain_text}
-                // bgUrl={item.properties.image.files[0].file.url}
               />
             ))}
           </div>
