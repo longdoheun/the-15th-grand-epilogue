@@ -2,7 +2,7 @@ import AppLayout from "@/Layout/AppLayout";
 import "@/styles/ImgPage/ImgPage.css";
 import React, { use, useEffect, useState } from "react";
 import Image from "next/image";
-import { SERVER } from "@/assets/lib/Config";
+import { SERVER } from "../../lib/Config";
 
 export async function getPhotos() {
   try {
@@ -28,12 +28,8 @@ export default function ImgPage() {
 
   // console.log(photoList, "fetching in components");
 
-  return (
-    <div className="img-con">
-      <AppLayout.Main>
-        <div className="img-title">Global Economics Gallery</div>
-        <section className="img-inner-con">
-          {/* {data.results.map((photo: any) => (
+  {
+    /* {data.results.map((photo: any) => (
             <Image
               key={photo.id}
               src={photo.properties.image.files[0].file.url}
@@ -41,7 +37,13 @@ export default function ImgPage() {
               width={200}
               height={200}
             />
-          ))} */}
+          ))} */
+  }
+  return (
+    <div className="img-con">
+      <AppLayout.Main>
+        <div className="img-title">The Grand Epilogue</div>
+        <section className="img-inner-con">
           <div className="photo"></div>
           <div className="photo"></div>
           <div className="photo"></div>

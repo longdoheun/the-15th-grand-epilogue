@@ -1,4 +1,4 @@
-import { DATABASE_PH_ID, DATABASE_USER_ID, TOKEN } from "@/assets/lib/Config";
+import { DATABASE_PH_ID, DATABASE_USER_ID, TOKEN } from "../../lib/Config";
 import { Client } from "@notionhq/client";
 import { NextResponse } from "next/server";
 

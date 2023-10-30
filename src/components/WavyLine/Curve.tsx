@@ -1,3 +1,4 @@
+"use client";
 import { WavyLineProps } from "@/types/WavyLineProps";
 import { CatmullRomLine, CurveModifier, Line } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";

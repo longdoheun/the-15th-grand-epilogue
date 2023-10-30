@@ -18,6 +18,10 @@ function theme({ children }: AppLayoutProps) {
   return <div className="layout-container -theme">{children}</div>;
 }
 
+function overlay({ children }: AppLayoutProps) {
+  return <div className="overlay-container">{children}</div>;
+}
+
 function invitation({ children }: AppLayoutProps) {
   return <div className="layout-container -invitation">{children}</div>;
 }
@@ -26,3 +30,4 @@ AppLayout.Main = main;
 AppLayout.Invitation = invitation;
 AppLayout.Scene = scene;
 AppLayout.Theme = theme;
+AppLayout.Overlay = overlay;

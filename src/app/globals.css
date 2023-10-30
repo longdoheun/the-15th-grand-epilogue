@@ -85,25 +85,25 @@ body {
   }
 }
 
-.theme-container {
-  width: calc(100% - 2rem);
+.overlay-container {
+  width: calc(100%);
   margin: auto;
 }
 
-@media (min-width: 768px) {
-  .theme-container {
+@media (min-width: 512px) {
+  .overlay-container {
     width: calc(100% - 8rem);
   }
 }
 
 @media (min-width: 1440px) {
-  .theme-container {
+  .overlay-container {
     width: calc(100% - 12rem);
   }
 }
 
 @media (min-width: 1920px) {
-  .theme-container {
+  .overlay-container {
     width: 1440px;
   }
 }

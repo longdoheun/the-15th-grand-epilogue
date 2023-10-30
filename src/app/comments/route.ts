@@ -1,7 +1,8 @@
-import { DATABASE_GB_ID, TOKEN } from "@/assets/lib/Config";
-import { NextResponse } from "next/server";
+import { DATABASE_GB_ID, TOKEN } from "@/lib/Config";
+import { Client } from "@notionhq/client";
+import { NextResponse, NextRequest } from "next/server";
 
-export async function POST() {
+export async function GET() {
   const options = {
     method: "POST",
     headers: {
@@ -26,4 +27,45 @@ export async function POST() {
   const results = rawdata.results;
 
   return NextResponse.json({ results });
+}
+
+export async function POST(req: Request) {
+  try {
+    const { name, year, comment } = await req.json();
+    console.log(name, year, comment);
+
+    const notion = new Client({
+      auth: `${TOKEN}`,
+    });
+    const response = await notion.pages.create({
+      parent: { type: "database_id", database_id: `${DATABASE_GB_ID}` },
+      properties: {
+        name: {
+          title: [
+            {
+              text: {
+                content: name,
+              },
+            },
+          ],
+        },
+        year: {
+          number: year,
+        },
+        comment: {
+          rich_text: [
+            {
+              text: {
+                content: comment,
+              },
+            },
+          ],
+        },
+      },
+    });
+
+    return NextResponse.json(response);
+  } catch (error) {
+    return NextResponse.json({ msg: "there was an error" });
+  }
 }

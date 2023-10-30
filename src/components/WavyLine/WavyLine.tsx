@@ -1,3 +1,4 @@
+"use client";
 import { Vector3Props, useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import { OrbitControls } from "@react-three/drei";

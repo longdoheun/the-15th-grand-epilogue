@@ -13,39 +13,30 @@ import Loading from "./loading";
 import ImgPage from "@/components/ImgPage/ImgPage";
 import Location from "@/components/Location/Location";
 import GuestBook from "@/components/GuestBook/GuestBook";
+import Overlay from "@/Layout/Overlay";
+import { useRecoilState } from "recoil";
+import { OverlayState } from "@/atoms/OverlayState";
+import BookForm from "@/components/GuestBook/BookForm";
 
 export default function Home() {
+  const [isOn, setIsOn] = useRecoilState(OverlayState);
   const isLoading = useLoading();
-  const points1 = [
-    new Vector3(0, 12, 0),
-    new Vector3(-2, 6, 0),
-    new Vector3(2, -6, 0),
-    new Vector3(0, -12, 0),
-  ];
 
   return (
     <>
       {isLoading && <Loading />}
-      <AppLayout.Scene>
-        <Canvas>
-          <directionalLight position={[1, 1, 1]} />
-          {/* <axesHelper scale={10} /> */}
-          <OrbitControls />
-          <WavyLine
-            points={points1}
-            color="#945273"
-            position={new Vector3(0, 0, 0)}
-          />
-          <color attach={"background"} args={["#f1f1f1"]} />
-        </Canvas>
-      </AppLayout.Scene>
+      {isOn && (
+        <Overlay>
+          <BookForm />
+        </Overlay>
+      )}
       <AppLayout.Scene>
         <MainPage isMain={true} />
         <Header />
         <Invitation />
         <ImgPage />
         <Location />
-        <GuestBook />
+        <GuestBook isMain={false} />
         <MainPage isMain={false} />
         <Footer />
       </AppLayout.Scene>

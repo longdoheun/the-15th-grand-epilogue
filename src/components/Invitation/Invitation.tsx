@@ -1,6 +1,6 @@
 import "@/styles/Invitation/Invitation.css";
 import AppLayout from "@/Layout/AppLayout";
-import { UNDERGRADUATE } from "@/assets/lib/InvitationText";
+import { UNDERGRADUATE } from "@/lib/InvitationText";
 import Logo from "@/assets/svg/logo.svg";
 
 export default function Invitation() {

@@ -2,9 +2,11 @@ import { childrenProps } from "@/types/childrenProps";
 import type { Metadata } from "next";
 import { Source_Serif_4 } from "next/font/google";
 import Script from "next/script";
-import { KAKAO_API_KEY } from "@/assets/lib/Config";
+import { KAKAO_API_KEY } from "../lib/Config";
 import "../../public/static/fonts/fonts.css";
 import "./globals.css";
+import Recoil from "@/Layout/Recoil";
+import Background from "@/components/WavyLine/Background";
 
 const SourceSerif = Source_Serif_4({ subsets: ["cyrillic"] });
 
@@ -35,7 +37,12 @@ export default function RootLayout({ children }: childrenProps) {
         src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${KAKAO_API_KEY}&autoload=false`}
         // strategy="beforeInteractive"
       />
-      <body className={SourceSerif.className}>{children}</body>
+      <body className={SourceSerif.className}>
+        <Recoil>
+          <Background />
+          {children}
+        </Recoil>
+      </body>
     </html>
   );
 }
