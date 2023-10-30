@@ -8,10 +8,8 @@ import Overlay from "@/Layout/Overlay";
 import BookForm from "@/components/GuestBook/BookForm";
 import { useRecoilState } from "recoil";
 import { OverlayState } from "@/atoms/OverlayState";
-import { GuestBookState } from "@/atoms/GuestBookState";
 
 export default function GuestBooks() {
-  const [CardList, setCardList] = useRecoilState(GuestBookState);
   const [isOn, setIsOn] = useRecoilState(OverlayState);
   return (
     <>

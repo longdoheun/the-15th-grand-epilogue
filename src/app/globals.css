@@ -44,6 +44,13 @@ body {
   /* gap: 80px; */
 }
 
+.-bookcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .-theme {
   scroll-snap-align: start;
   height: 100%;

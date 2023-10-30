@@ -34,7 +34,10 @@
 }
 
 .gb-inner-con {
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
   width: 100%;
   overflow-x: scroll;
 }
@@ -45,7 +48,7 @@
 
 .gb-card-renderer {
   /* width: 100%; */
-  max-width: 1200px;
+  max-width: 1400px;
   display: grid;
   gap: 20px 1rem;
   grid-template-columns: repeat(6, 1fr);

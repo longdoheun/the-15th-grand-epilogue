@@ -77,7 +77,7 @@ export default function GuestBook({ isMain }: { isMain: boolean }) {
       ) : (
         <>
           <section className="gb-inner-con">
-            <AppLayout.Main>
+            <AppLayout.Book>
               <div className="gb-card-renderer">
                 {CardList.map((item: any) => (
                   <BookCard
@@ -92,7 +92,7 @@ export default function GuestBook({ isMain }: { isMain: boolean }) {
                   />
                 ))}
               </div>
-            </AppLayout.Main>
+            </AppLayout.Book>
           </section>
         </>
       )}

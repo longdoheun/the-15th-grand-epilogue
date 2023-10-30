@@ -10,6 +10,10 @@ function scene({ children }: AppLayoutProps) {
   return <div className="scene">{children}</div>;
 }
 
+function book({ children }: AppLayoutProps) {
+  return <div className="layout-container -bookcard">{children}</div>;
+}
+
 function main({ children }: AppLayoutProps) {
   return <div className="layout-container -main">{children}</div>;
 }
@@ -31,3 +35,4 @@ AppLayout.Invitation = invitation;
 AppLayout.Scene = scene;
 AppLayout.Theme = theme;
 AppLayout.Overlay = overlay;
+AppLayout.Book = book;

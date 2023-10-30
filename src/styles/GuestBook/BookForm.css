@@ -46,6 +46,10 @@
   resize: none;
 }
 
+.t-a::-webkit-scrollbar {
+  display: none;
+}
+
 .t-a-cover {
   width: 100%;
 }

@@ -18,7 +18,13 @@ export default function Header() {
             GE:pilogue
           </span>
           <section className="nav">
-            <span>About</span>
+            <span
+              onClick={() => {
+                router.push("/about");
+              }}
+            >
+              About
+            </span>
             <span>Sign up</span>
           </section>
         </div>
