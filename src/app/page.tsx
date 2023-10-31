@@ -1,8 +1,4 @@
 "use client";
-import WavyLine from "@/components/WavyLine/WavyLine";
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { Vector3 } from "three";
 import MainPage from "@/components/MainPage/MainPage";
 import Invitation from "@/components/Invitation/Invitation";
 import Header from "@/Layout/Header";
