@@ -15,6 +15,7 @@ export default function About() {
     <>
       <AppLayout.Scene>
         <Header />
+        <Information title={"Information"} context={INFORMATION} />
         <Information title={"Dress code"} context={DRESSCODE} />
         <Information title={"Timetable"} context={TIMELINE} />
         <Information title={"Dining"} context={DINNING} />
