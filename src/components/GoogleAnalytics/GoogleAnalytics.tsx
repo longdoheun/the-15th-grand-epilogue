@@ -1,3 +1,4 @@
+"use client";
 import { pageview } from "@/lib/gtagHelpers";
 import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
