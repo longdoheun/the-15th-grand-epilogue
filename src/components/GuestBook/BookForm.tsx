@@ -74,10 +74,10 @@ export default function BookForm() {
           <SquareBtn
             context="작성하기"
             onClickEvent={async () => {
+              setIsOn(false);
               onSubmit(writer);
               const data = await getCardList();
               setCardList(data.results);
-              setIsOn(false);
             }}
           />
         </div>
