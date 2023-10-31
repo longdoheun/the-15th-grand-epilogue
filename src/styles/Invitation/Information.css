@@ -15,10 +15,11 @@
 }
 
 .info-left {
+  color: #945273;
   margin-top: 40px;
   max-width: 800px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   /* line change */
   white-space: pre-wrap;
   /* line width */
@@ -27,7 +28,5 @@
   font-family: source-han-serif-korean, serif;
   font-style: normal;
   /* font-weight: 900; */
-  color: #242424;
-
   font-size: 20px;
 }

@@ -33,3 +33,31 @@
 .header-logo {
   font-weight: 500;
 }
+
+.h-l {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.h-l-btn {
+  display: none;
+}
+
+@media (max-width: 512px) {
+  .h-l-btn {
+    display: block;
+  }
+  .nav {
+    padding-top: 10px;
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: space-evenly; */
+  }
+  .line {
+    flex-direction: column;
+  }
+}

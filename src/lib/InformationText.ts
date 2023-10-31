@@ -1,5 +1,8 @@
 export const INFORMATION =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis mi sit amet scelerisque placerat. Suspendisse viverra lacus aliquam lacus porta viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere ante a nisi faucibus, at rutrum felis laoreet. Sed sed fringilla ante, et fermentum massa. Nam porttitor mauris ex, et pharetra sem ullamcorper nec. Sed vitae massa elementum, tempus ipsum molestie, egestas felis";
+  "게필로그 행사에 와주시는 모든 졸업생 선배님, 재학생, 교수님들이 즐거운 시간 보내실 수 있도록 알찬 행사를 준비하고 있습니다.\n 행사 당일에는 게필로그 포토존과 포토부스가 설치될 예정입니다. 주차권 발권이 가능합니다.";
+export const TIMELINE =
+  "19:00~19:20 | 입장 및 포토월 이용 \n19:20~20:00 | 개회식 \n20:00~21:20 | 식사 및 교류의 장 \n21:20~21:30 | 폐회식\n* 위 일정은 변경될 수 있습니다.";
 export const DRESSCODE =
-  "이번 게필로그 행사의 드레스코드는 Black & White입니다.";
-export const SCHEDULE = "";
+  "이번 게필로그 행사의 드레스코드는 Black & White 입니다.";
+export const DINNING =
+  "글로벌경제학과 15주년 게필로그 행사는 케이터링24와 함께합니다. 다양한 음식들이 준비되어 있으니 풍족한 마음으로 행사를 즐겨주시기 바랍니다.";
