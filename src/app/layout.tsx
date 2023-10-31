@@ -34,11 +34,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: childrenProps) {
   return (
     <html lang="en">
-      <GoogleAnalytics GA_MEASUREMENT_ID="G-F5TVD4WGZW" />
       <Script
         src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${KAKAO_API_KEY}&autoload=false`}
         // strategy="beforeInteractive"
       />
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-F5TVD4WGZW" />
       <body className={SourceSerif.className}>
         <Recoil>
           <Background />
