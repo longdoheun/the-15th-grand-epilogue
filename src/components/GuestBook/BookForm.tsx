@@ -38,23 +38,23 @@ export default function BookForm() {
       <section className="wr-bg">
         <div className="wr-con">
           <span>
-            {/* <div className="wr-inner">학번 2자리 입력</div> */}
             <Input
-              type="tel"
+              type="number"
               name="year"
               value={writer.year}
+              maxLength={2}
               onChange={changeInput}
               placeholder="학번 두 자리 (ex. 22)"
               autoComplete="on"
             />
           </span>
           <span>
-            {/* <div className="wr-inner">닉네임 입력</div> */}
             <Input
               type="text"
               name="name"
               value={writer.name}
               onChange={changeInput}
+              maxLength={8}
               placeholder="닉네임 입력하기"
               autoComplete="on"
             />

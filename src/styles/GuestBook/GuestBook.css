@@ -52,12 +52,41 @@
   display: grid;
   gap: 20px 1rem;
   grid-template-columns: repeat(6, 1fr);
+  margin: 2px 0;
+}
+
+.gb-renderer-con {
+  /* margin-bottom: 100px; */
+  display: grid;
+  gap: 24px 24px;
+  grid-template-columns: repeat(6, 1fr);
+
+  @media (max-width: 1200px) {
+    gap: 14px 14px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media (max-width: 1024px) {
+    gap: 14px 14px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    gap: 14px 14px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 390px) {
+    gap: 14px 14px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .bookcard {
-  width: 200px;
+  min-width: 200px;
+  min-height: 269px;
+  width: auto;
   padding: 10px;
-  aspect-ratio: 0.8;
+  /* aspect-ratio: 0.8; */
   /* background: #fff; */
   border-radius: 14px;
   color: #945273;
@@ -85,7 +114,7 @@
 
 .bc-content {
   overflow-y: scroll;
-  height: 120px;
+  height: 140px;
   -ms-overflow-style: none; /* 인터넷 익스플로러 */
   scrollbar-width: none; /* 파이어폭스 */
 }

@@ -2,6 +2,7 @@ import React, { use, useState } from "react";
 import AppLayout from "@/Layout/AppLayout";
 import "@/styles/Layout/Header.css";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Header() {
   const router = useRouter();
@@ -25,7 +26,9 @@ export default function Header() {
             >
               About
             </span>
-            <span>Sign up</span>
+            <span>
+              <Link href="#form">Sign up</Link>
+            </span>
           </section>
         </div>
       </AppLayout.Theme>

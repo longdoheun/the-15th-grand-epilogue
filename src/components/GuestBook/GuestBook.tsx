@@ -37,9 +37,9 @@ export default function GuestBook({ isMain }: { isMain: boolean }) {
             onClick={() => {
               setIsOn(true);
             }}
-            className="gb-exp"
+            className="gb-exp underlined-text"
           >
-            Click to write Message
+            Click to Write Message
           </div>
         </section>
       </AppLayout.Main>
@@ -78,7 +78,7 @@ export default function GuestBook({ isMain }: { isMain: boolean }) {
         <>
           <section className="gb-inner-con">
             <AppLayout.Book>
-              <div className="gb-card-renderer">
+              <div className="gb-renderer-con">
                 {CardList.map((item: any) => (
                   <BookCard
                     key={item.id}

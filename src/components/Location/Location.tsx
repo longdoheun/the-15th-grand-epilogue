@@ -19,11 +19,11 @@ export default function Location() {
         <section className="location-name">
           <div
             onClick={() => router.push("https://naver.me/5vIlgA1V")}
-            className="locattion-name-main"
+            className="location-name-main"
           >
             600주년 기념관 5F 조병두홀
           </div>
-          <div className="locattion-name-sub">
+          <div className="location-name-sub">
             서울 종로구 성균관로 25-2 성균관대학교
           </div>
         </section>
