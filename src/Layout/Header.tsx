@@ -53,7 +53,7 @@ export default function Header() {
                   router.push("/guestbook");
                 }}
               >
-                Book
+                Guest Book
               </span>
               <span>
                 <Link href={`${SERVER}/#form`}>Sign up</Link>
