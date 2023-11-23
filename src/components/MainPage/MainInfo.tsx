@@ -8,7 +8,7 @@ export default function MainInfo() {
         <div>2023.11.24. FRI. 19:00 ~ 21:30</div>
         <div>SKKU 600th Anniversary building</div>
         <div>Dress Code : Black & White</div>
-        <section className="sign-up">
+        {/* <section className="sign-up">
           <div className="underlined-text">
             <Link href="https://forms.gle/WML4JrMorpQQXF1a9">
               졸업생 신청하기
@@ -19,7 +19,7 @@ export default function MainInfo() {
               재학생 신청하기
             </Link>
           </div>
-        </section>
+        </section> */}
       </div>
     </>
   );
